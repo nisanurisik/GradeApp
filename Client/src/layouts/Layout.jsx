@@ -1,8 +1,9 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import { Outlet } from "react-router-dom";
 
-function Layout({ children }) {
+function Layout() {
   return (
     <>
       <div className="flex">
@@ -10,7 +11,9 @@ function Layout({ children }) {
 
         <div className="w-full">
           <Navbar />
-          <div className="p-7">{children}</div>
+          <main className="flex-grow p-7">
+            <Outlet />
+          </main>
         </div>
       </div>
       <Footer />

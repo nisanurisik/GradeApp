@@ -2,7 +2,7 @@ function Navbar() {
   return (
     <div className="navbar bg-[#1e1e2d] w-full">
       <div className="flex-1">
-        <a className="btn btn-sm ms-4">Öğrenci Bilgi Sistemi</a>
+        <a className="btn btn-sm ms-5">Öğrenci Bilgi Sistemi</a>
       </div>
       <div className="flex grow justify-end px-2">
         <div className="flex items-stretch">
