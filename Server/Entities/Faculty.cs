@@ -5,6 +5,6 @@ namespace Server.Entities
     {
         public string FacultyName { get; set; }
 
-        public ICollection<Department> Departments { get; set; } = new List<Department>();
+        public ICollection<Department>? Departments { get; set; } = new List<Department>();
     }
 }
