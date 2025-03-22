@@ -1,8 +1,9 @@
 import { FaUserGraduate } from "react-icons/fa";
+import Card from "./Card";
 
 function StudentCard() {
   return (
-    <div className="card bg-base-100 shadow-md h-fit">
+    <Card>
       <figure className="px-10 pt-10">
         <FaUserGraduate className="text-7xl text-gray-700 mb-2" />
       </figure>
@@ -18,7 +19,7 @@ function StudentCard() {
           <button className="btn btn-xs btn-primary">1. Sınıf</button>
         </div>
       </div>
-    </div>
+    </Card>
   );
 }
 
