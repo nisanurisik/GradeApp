@@ -1,5 +1,6 @@
 import React from "react";
 import { MdCampaign } from "react-icons/md";
+import Card from "./Card";
 
 const announcements = [
   {
@@ -24,7 +25,7 @@ const announcements = [
 
 const StudentNews = () => {
   return (
-    <div className="card bg-base-100 shadow-md h-fit">
+    <Card>
       <div className="card-body flex flex-col items-start">
         <h2 className="card-title flex items-center text-gray-600">
           Duyurular
@@ -53,7 +54,7 @@ const StudentNews = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </Card>
   );
 };
 

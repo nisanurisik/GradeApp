@@ -1,5 +1,7 @@
+import CoursesGradeCard from "../components/CoursesGradeCard";
+
 function Courses() {
-  return <div>📖 Selected Courses Page</div>;
+  return <CoursesGradeCard />;
 }
 
 export default Courses;
