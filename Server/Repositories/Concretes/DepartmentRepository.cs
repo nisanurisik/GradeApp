@@ -8,7 +8,7 @@ namespace Server.Repositories.Concretes
   {
     private readonly AppDbContext _context;
 
-    public DepartmentRepository(AppDbContext context) : base(context, context.Set<Department>())
+    public DepartmentRepository(AppDbContext context) : base(context)
     {
       _context = context;
     }
@@ -16,9 +16,15 @@ namespace Server.Repositories.Concretes
     public async Task UpdateDepartmentAsync(Department department)
     {
       var updateDepartment = await GetByIdAsync(department.Id);
-      updateDepartment.DepartmentName = department.DepartmentName;
 
-      _context.Departments.Update(department);
+      if (department.Faculty != null)
+      {
+        updateDepartment.Faculty = department.Faculty;
+      }
+
+      updateDepartment.DepartmentName = department.DepartmentName;
+      updateDepartment.FacultyId = department.FacultyId;
+
       await SaveAsync();
     }
   }

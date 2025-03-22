@@ -8,18 +8,16 @@ namespace Server.Repositories.Concretes
   {
     private readonly AppDbContext _context;
 
-    public FacultyRepository(AppDbContext context) : base(context, context.Set<Faculty>())
+    public FacultyRepository(AppDbContext context) : base(context)
     {
       _context = context;
     }
-
 
     public async Task UpdateFacultyAsync(Faculty faculty)
     {
       var updateFaculty = await GetByIdAsync(faculty.Id);
       updateFaculty.FacultyName = updateFaculty.FacultyName;
 
-      _context.Faculties.Update(updateFaculty);
       await SaveAsync();
     }
   }
