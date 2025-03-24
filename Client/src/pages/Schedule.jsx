@@ -1,5 +1,7 @@
+import CourseSchedul from "../components/CourseSchedul";
+
 function Schedule() {
-  return <div>📅 Course Schedule Page</div>;
+  return <CourseSchedul />;
 }
 
 export default Schedule;

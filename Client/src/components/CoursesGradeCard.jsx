@@ -79,7 +79,7 @@ function CoursesGradeCard() {
   return (
     <>
       <h2 className="poppins-semibold text-lg mb-5">1. Sınıf Dersleri</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-7">
         {gradesData.map((course, index) => (
           <Card key={index}>
             <div className="card-body">
