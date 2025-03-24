@@ -1,5 +1,7 @@
+import ExamTimetable from "../components/ExamTimetable";
+
 function Exams() {
-  return <div>📝 Exam Timetable Page</div>;
+  return <ExamTimetable />;
 }
 
 export default Exams;
