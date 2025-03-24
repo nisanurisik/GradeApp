@@ -11,6 +11,6 @@ namespace Server.Entities
 
         public Department Department { get; set; }
 
-        public ICollection<Course> Courses { get; set; } = new List<Course>();
+        public ICollection<Course>? Courses { get; set; } = new List<Course>();
     }
 }

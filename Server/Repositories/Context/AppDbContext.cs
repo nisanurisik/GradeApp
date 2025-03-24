@@ -16,5 +16,8 @@ namespace Server.Repositories.Context
         public DbSet<Department> Departments { get; set; }
         public DbSet<Grade> Grades { get; set; }
         public DbSet<Class> Classes { get; set; }
+
     }
 }
+
+
