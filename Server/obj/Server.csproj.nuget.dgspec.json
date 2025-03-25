@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dell\\Desktop\\GradeApp\\server\\Server.csproj": {}
+    "C:\\Users\\dell\\Desktop\\GradeApp\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dell\\Desktop\\GradeApp\\server\\Server.csproj": {
+    "C:\\Users\\dell\\Desktop\\GradeApp\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell\\Desktop\\GradeApp\\server\\Server.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\Desktop\\GradeApp\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\dell\\Desktop\\GradeApp\\server\\Server.csproj",
+        "projectPath": "C:\\Users\\dell\\Desktop\\GradeApp\\Server\\Server.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell\\Desktop\\GradeApp\\server\\obj\\",
+        "outputPath": "C:\\Users\\dell\\Desktop\\GradeApp\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

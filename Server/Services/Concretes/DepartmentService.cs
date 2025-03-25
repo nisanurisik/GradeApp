@@ -37,7 +37,7 @@ namespace Server.Services.Abstracts
     }
     public async Task AddDepartmentAsync(Department department)
     {
-      if (!string.IsNullOrWhiteSpace(department.DepartmentName))
+      if (string.IsNullOrWhiteSpace(department.DepartmentName))
       {
         throw new Exception("Departman adı boş olamaz.");
       }
@@ -52,7 +52,7 @@ namespace Server.Services.Abstracts
 
     public async Task UpdateDepartmentAsync(Department department)
     {
-      if (!string.IsNullOrWhiteSpace(department.DepartmentName))
+      if (string.IsNullOrWhiteSpace(department.DepartmentName))
       {
         throw new Exception("Departman adı boş bırakılamaz.");
       }
