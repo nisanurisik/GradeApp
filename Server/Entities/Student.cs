@@ -14,9 +14,9 @@ namespace Server.Entities
         public int? ClassId { get; set; }
         public int? DepartmentId { get; set; }
 
-        public Class Class { get; set; }
-        public Department Department { get; set; }
+        public Class? Class { get; set; }
+        public Department? Department { get; set; }
 
-        public ICollection<Grade> Grades { get; set; } = new List<Grade>();
+        public ICollection<Grade>? Grades { get; set; } = new List<Grade>();
     }
 }

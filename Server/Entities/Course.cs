@@ -11,7 +11,7 @@ namespace Server.Entities
         public int? DepartmentId { get; set; }
 
         [JsonIgnore]
-        public Teacher Teacher { get; set; }
-        public Department Department { get; set; }
+        public Teacher? Teacher { get; set; }
+        public Department? Department { get; set; }
     }
 }

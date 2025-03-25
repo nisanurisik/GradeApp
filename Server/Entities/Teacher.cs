@@ -9,7 +9,7 @@ namespace Server.Entities
 
         public int DepartmentId { get; set; }
 
-        public Department Department { get; set; }
+        public Department? Department { get; set; }
 
         public ICollection<Course>? Courses { get; set; } = new List<Course>();
     }

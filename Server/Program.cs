@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Server.Entities;
 using Server.Mappers;
+using Server.Repositories;
 using Server.Repositories.Abstracts;
 using Server.Repositories.Concretes;
 using Server.Repositories.Context;
@@ -51,6 +52,8 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
+
+SeedData.TestData(app);
 
 if (app.Environment.IsDevelopment())
 {
