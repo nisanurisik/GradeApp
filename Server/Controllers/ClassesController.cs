@@ -8,7 +8,7 @@ namespace Server.Controllers
   [Route("api/classes")]
   public class ClassesController : ControllerBase
   {
-    private IClassService _classService;
+    private readonly IClassService _classService;
 
     public ClassesController(IClassService classService)
     {

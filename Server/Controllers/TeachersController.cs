@@ -8,7 +8,7 @@ namespace Server.Controllers
   [Route("api/teachers")]
   public class TeachersController : ControllerBase
   {
-    private ITeacherService _teacherService;
+    private readonly ITeacherService _teacherService;
 
     public TeachersController(ITeacherService teacherService)
     {

@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Server.Entities;
 using Server.Mappers;
 using Server.Repositories.Abstracts;
 using Server.Repositories.Concretes;
@@ -24,14 +25,20 @@ builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 builder.Services.AddScoped<IClassRepository, ClassRepository>();
 builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
 builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped<IGradeRepository, GradeRepository>();
 builder.Services.AddScoped<IFacultyService, FacultyService>();
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 builder.Services.AddScoped<IClassService, ClassService>();
 builder.Services.AddScoped<ITeacherService, TeacherService>();
 builder.Services.AddScoped<ICourseService, CourseService>();
+builder.Services.AddScoped<IStudentService, StudentService>();
+builder.Services.AddScoped<IGradeService, GradeService>();
 
 builder.Services.AddAutoMapper(typeof(TeacherMapperProfile));
 builder.Services.AddAutoMapper(typeof(CourseMapperProfile));
+builder.Services.AddAutoMapper(typeof(StudentMapperProfile));
+builder.Services.AddAutoMapper(typeof(GradeMapperProfile));
 
 builder.Services.AddCors(options =>
 {

@@ -1,7 +1,8 @@
 namespace Server.Entities.DTOs
 {
-  public sealed class TeacherUpdateDto : Entity<int>
+  public sealed class TeacherUpdateDto
   {
+    public int Id { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string Email { get; set; }
