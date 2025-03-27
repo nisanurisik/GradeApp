@@ -1,5 +1,7 @@
+import TranscriptItem from "../components/TranscriptItem";
+
 function Transcript() {
-  return <div>📜 Transcript Page</div>;
+  return <TranscriptItem />;
 }
 
 export default Transcript;

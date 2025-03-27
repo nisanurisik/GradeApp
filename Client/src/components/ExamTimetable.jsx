@@ -1,3 +1,48 @@
+const exams = [
+  {
+    course: "Matematik-II",
+    date: "15.04.2025 (Salı)",
+    clock: "10:00 - 12:00",
+    type: "Vize",
+    class: "Amfi 1",
+  },
+  {
+    course: "Fizik-II",
+    date: "17.04.2025 (Perşembe)",
+    clock: "13:30 - 15:00",
+    type: "Vize",
+    class: "Fizik Lab.",
+  },
+  {
+    course: "Elektrik Devreleri ve Elektronik",
+    date: "18.04.2025 (Cuma)",
+    clock: "09:00 - 11:00",
+    type: "Vize",
+    class: "Lab 202",
+  },
+  {
+    course: "Olasılık ve İstatistiğe Giriş",
+    date: "30.05.2025 (Cuma)",
+    clock: "11:00 - 13:00",
+    type: "Vize",
+    class: "Amfi 2",
+  },
+  {
+    course: "Programlamaya Giriş-II",
+    date: "03.06.2025 (Salı)",
+    clock: "14:00 - 16:00",
+    type: "Vize",
+    class: "Lab 205",
+  },
+  {
+    course: "Çizge Kuramı",
+    date: "05.06.2025 (Perşembe)",
+    clock: "15:00 - 17:00",
+    type: "Vize",
+    class: "208",
+  },
+];
+
 function ExamTimetable() {
   return (
     <>
@@ -6,7 +51,7 @@ function ExamTimetable() {
       </h2>
 
       <div className="overflow-x-auto rounded-box border border-base-content/10 bg-base-100">
-        <table className="table min-w-[700px] text-xs md:text-sm">
+        <table className="table  text-xs md:text-sm">
           <thead>
             <tr>
               <th>Ders</th>
@@ -17,48 +62,15 @@ function ExamTimetable() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Matematik-II</td>
-              <td>15.04.2025 (Salı)</td>
-              <td>10:00 - 12:00</td>
-              <td>Vize</td>
-              <td>Amfi 1</td>
-            </tr>
-            <tr>
-              <td>Fizik-II</td>
-              <td>17.04.2025 (Perşembe)</td>
-              <td>13:30 - 15:00</td>
-              <td>Vize</td>
-              <td>Fizik Lab.</td>
-            </tr>
-            <tr>
-              <td>Elektrik Devreleri ve Elektronik</td>
-              <td>18.04.2025 (Cuma)</td>
-              <td>09:00 - 11:00</td>
-              <td>Vize</td>
-              <td>Lab 202</td>
-            </tr>
-            <tr>
-              <td>Olasılık ve İstatistiğe Giriş</td>
-              <td>30.05.2025 (Cuma)</td>
-              <td>11:00 - 13:00</td>
-              <td>Vize</td>
-              <td>Amfi 2</td>
-            </tr>
-            <tr>
-              <td>Programlamaya Giriş-II</td>
-              <td>03.06.2025 (Salı)</td>
-              <td>14:00 - 16:00</td>
-              <td>Vize</td>
-              <td>Lab 205</td>
-            </tr>
-            <tr>
-              <td>Çizge Kuramı</td>
-              <td>05.06.2025 (Perşembe)</td>
-              <td>15:00 - 17:00</td>
-              <td>Vize</td>
-              <td>208</td>
-            </tr>
+            {exams.map((exam, index) => (
+              <tr key={index}>
+                <td>{exam.course}</td>
+                <td>{exam.date}</td>
+                <td>{exam.clock}</td>
+                <td>{exam.type}</td>
+                <td>{exam.class}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
