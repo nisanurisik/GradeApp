@@ -1,5 +1,7 @@
+import LibraryBorrowings from "../components/LibraryBorrowings";
+
 function Library() {
-  return <div>📚 Library Page</div>;
+  return <LibraryBorrowings />;
 }
 
 export default Library;
