@@ -1,5 +1,7 @@
+import AdvisorCard from "../components/AdvisorCard";
+
 function Advising() {
-  return <div>👨‍🏫 Academic Advising Page</div>;
+  return <AdvisorCard />;
 }
 
 export default Advising;
