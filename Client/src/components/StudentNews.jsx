@@ -44,7 +44,7 @@ const StudentNews = () => {
                   {item.date}
                 </span>
                 <div className="card flex items-start  bg-[#F0F0F0] shadow-sm p-4 space-y-1">
-                  <h2 className=" text-purple-600 text-sm">{item.title}</h2>
+                  <h2 className="text-purple-600 text-sm">{item.title}</h2>
                   <span className="text-start text-gray-900">
                     {item.description}
                   </span>
